@@ -1,1 +1,2 @@
 # Automated-Question-Answering-System-Using-Web-Scraping-RAG-and-GPT-3.5-Turbo
+The objective of this project is to create an automated system that can scrape product information from given URLs, understand and answer user questions based on the scraped data, and update a MySQL database with the generated answers. The system utilizes Retrieval-Augmented Generation (RAG) with OpenAI's GPT-3.5 Turbo to ensure accurate and contextually relevant answers
