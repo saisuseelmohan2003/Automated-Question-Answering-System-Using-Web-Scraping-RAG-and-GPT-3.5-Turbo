@@ -12,7 +12,7 @@ This system automates the process of answering product-related questions stored 
 - **🧠 Contextual Answer Generation**: Uses the scraped data to provide accurate answers to user questions.
 - **💾 Database Integration**: Retrieves questions from and stores answers in a MySQL database.
 
-## ⚙️ Configure MySQL connection:
+## ⚙️ Configure MySQL connection
 
 Update the MySQL connection details in the script:
 
@@ -22,12 +22,12 @@ MYSQL_PASSWORD = 'your_password'
 MYSQL_DB = 'your_database'
 MYSQL_PORT = your_port
 
-## 🔑 Set up OpenAI API key:
+## 🔑 Set up OpenAI API key
 
 openai.api_key = "your_openai_api_key"
 
 
-## ▶️ Run the script:
+## ▶️ Run the script
 
 The script will connect to the MySQL database, fetch questions without answers, scrape the required product data, generate answers using GPT-3.5 Turbo, and update the database with the generated answers.
 
