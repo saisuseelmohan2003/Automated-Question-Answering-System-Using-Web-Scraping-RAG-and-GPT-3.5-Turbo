@@ -41,8 +41,8 @@ The script will connect to the MySQL database, fetch questions without answers, 
 
 ## 📝 Function Descriptions
 
-scrape_product_data(url): Scrapes product data from the given URL and returns a dictionary containing the title, features, key features, description, product information, and specifications.
+- **scrape_product_data(url)**: Scrapes product data from the given URL and returns a dictionary containing the title, features, key features, description, product information, and specifications.
 
-generate_answer(question, product_data): Generates an answer to the given question using the provided product data and the OpenAI API.
+- **generate_answer(question, product_data)**: Generates an answer to the given question using the provided product data and the OpenAI API.
 
-process_questions(): Connects to the MySQL database, fetches questions, scrapes product data, generates answers, and updates the database.
+- **process_questions()**: Connects to the MySQL database, fetches questions, scrapes product data, generates answers, and updates the database.
