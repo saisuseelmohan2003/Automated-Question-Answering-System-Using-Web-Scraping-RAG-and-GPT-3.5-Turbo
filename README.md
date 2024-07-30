@@ -33,11 +33,11 @@ The script will connect to the MySQL database, fetch questions without answers, 
 
 ## 🤖 How It Works
 
-💻 Database Connection: The script connects to a MySQL database and fetches questions that need answers.
-🌐 Web Scraping: It scrapes product information from specified URLs to gather necessary data.
-🧩 Data Aggregation: The scraped data is organized into a structured format.
-🔮 Answer Generation: Using the GPT-3.5 Turbo model, the script generates answers to the questions based on the scraped data.
-💾 Database Update: The generated answers are updated back into the MySQL database.
+-**💻 Database Connection**: The script connects to a MySQL database and fetches questions that need answers.
+-**🌐 Web Scraping**: It scrapes product information from specified URLs to gather necessary data.
+-**🧩 Data Aggregation**: The scraped data is organized into a structured format.
+-**🔮 Answer Generation**: Using the GPT-3.5 Turbo model, the script generates answers to the questions based on the scraped data.
+-**💾 Database Update**: The generated answers are updated back into the MySQL database.
 
 ## 📝 Function Descriptions
 
