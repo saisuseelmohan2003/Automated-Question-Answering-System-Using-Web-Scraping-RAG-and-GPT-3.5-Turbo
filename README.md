@@ -1,26 +1,49 @@
-# Automated Question Answering System Using Web Scraping, RAG, and Llama 3 with Ollama 🤖📚
+# 📦 Automated Question Answering System Using Web Scraping, RAG, and GPT-3.5 Turbo
 
-## Overview 🚀
+Welcome to the **Automated Question Answering System**! This project uses web scraping to gather product data and combines it with OpenAI's GPT-3.5 Turbo to provide accurate answers to user questions. 
 
-This project is an **Automated Question Answering System** that uses web scraping, retrieval-augmented generation (RAG), and the Llama 3 model from Ollama to generate, categorize, validate, and answer customer questions about products. 
+## 🚀 Project Overview
 
-## Features 💡
+This system automates the process of answering product-related questions stored in a MySQL table. It scrapes relevant data from product web pages and uses the GPT-3.5 Turbo model to generate responses based on the scraped data and the given questions.
 
-- **Web Scraping**: Extracts detailed product information from various websites. 🌐
-- **Question Generation**: Uses AI to create relevant questions about products. 🤔
-- **Validation**: Ensures questions meet specific criteria before answering. ✅
-- **Answer Generation**: Provides accurate and context-specific answers using the Ollama Llama 3 model. 🦙📚
-- **Data Handling**: Manages data efficiently with Pandas and MySQL. 💾
+## 🌟 Features
 
-## Technologies Used 🛠️
+- **🔍 Web Scraping**: Collects product data such as title, features, key features, description, and specifications.
+- **🧠 Contextual Answer Generation**: Uses the scraped data to provide accurate answers to user questions.
+- **💾 Database Integration**: Retrieves questions from and stores answers in a MySQL database.
 
-- **Python**: For scripting and automation.
-- **Pandas**: For data manipulation and analysis.
-- **MySQL**: For database management.
-- **BeautifulSoup**: For web scraping.
-- **LangChain**: For integrating AI models.
-- **OpenAI GPT-3.5**: For question generation.
-- **Ollama Llama 3**: For answer generation.
+⚙️ Configure MySQL connection:
 
+Update the MySQL connection details in the script:
 
-*Happy Coding!* 👨‍💻👩‍💻
+MYSQL_HOST = 'your_host'
+MYSQL_USER = 'your_user'
+MYSQL_PASSWORD = 'your_password'
+MYSQL_DB = 'your_database'
+MYSQL_PORT = your_port
+
+🔑 Set up OpenAI API key:
+
+openai.api_key = "your_openai_api_key"
+
+📜 Usage
+
+▶️ Run the script:
+
+The script will connect to the MySQL database, fetch questions without answers, scrape the required product data, generate answers using GPT-3.5 Turbo, and update the database with the generated answers.
+
+🤖 How It Works
+
+💻 Database Connection: The script connects to a MySQL database and fetches questions that need answers.
+🌐 Web Scraping: It scrapes product information from specified URLs to gather necessary data.
+🧩 Data Aggregation: The scraped data is organized into a structured format.
+🔮 Answer Generation: Using the GPT-3.5 Turbo model, the script generates answers to the questions based on the scraped data.
+💾 Database Update: The generated answers are updated back into the MySQL database.
+
+📝 Function Descriptions
+
+scrape_product_data(url): Scrapes product data from the given URL and returns a dictionary containing the title, features, key features, description, product information, and specifications.
+
+generate_answer(question, product_data): Generates an answer to the given question using the provided product data and the OpenAI API.
+
+process_questions(): Connects to the MySQL database, fetches questions, scrapes product data, generates answers, and updates the database.
